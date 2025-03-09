@@ -1,6 +1,5 @@
-import React from 'react';
 import { Link } from "react-router-dom";
-import './welcome.css';
+import "./welcome.css";
 import beef from '../../image/beef.jpg';
 import fastFood from '../../image/fast-food.jpg';
 import oneDollar from '../../image/one-dollar.webp';
@@ -64,7 +63,7 @@ function WelcomePage({ darkMode }) {
       <section className="contact-section">
         <h2>{t('ContactUs')}</h2>
         <div className="contact-buttons">
-          <a href="tel:+96176449756" className="contact-button"><i class="bi bi-telephone"></i> {t('cme')}</a>
+          <a href="tel:+96176449756" className="contact-button"><i className="bi bi-telephone"></i> {t('cme')}</a>
           <a href="https://wa.me/96176449756" className="contact-button whatsapp"><i className="bi bi-whatsapp"></i> {('whatsap')}</a>
         </div>
       </section>
