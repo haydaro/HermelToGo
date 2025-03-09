@@ -1,0 +1,343 @@
+/*/////////////////Profile//////////////////////////////*/
+
+.auth .error{}
+.auth-dark{
+    background-color: var(--background-dark);
+    color: var(--color-dark-mode);
+    padding-bottom: 76px;
+}
+.auth .profile{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    background-color: var(--gray-color);
+    padding: 6px 0 20px 0px;
+    height: 300px;
+    box-shadow: 0 2px 10px rgb(45 40 42 / 34%);
+}
+.auth-dark .profile{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    background-color: #b7c3cf;
+    padding: 6px 0 20px 0px;
+    height: 300px;
+    box-shadow: 0 2px 10px rgb(45 40 42 / 34%);
+    
+}
+.profile-con .img{
+    position: relative;
+}
+.profile-con img{
+    width: 100%;
+    object-fit: contain;
+    border-radius: 20px;
+    height: 300px;
+}
+.profile-con .information{
+    position: absolute;
+    top: 362px;
+    display: flex;
+    width: 98%;
+    align-items: center;
+    justify-content: center;
+}
+.profile-con .left{
+    background-image: var(--gray-color);
+    flex-direction: column;
+}
+.profile-con .left .up-profile{
+    background-color: red;
+    color: white;
+    font-size: 16px;
+    border: red;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.profile-con .location-informition{
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+.profile-con .location-active{
+    display: inline-block;
+}
+.profile-con .location-active p{
+    color: var(--red-color);
+    margin-bottom: -6px;
+}
+.profile-con .location-active span{
+    font-size: 11px;
+    color: var(--blue-color);
+}
+.profile-con .btn-update-location{
+    background-color: unset;
+    color: var(--blue-color);
+    font-size: 30px;
+}
+.profile-con .save button{
+    background-color: unset;
+    border: none;
+    font-size: 25px;
+}
+.profile-con .save .icon{
+    color: var(--green-color);
+}
+.profile-con .img button{
+    border: none;
+    background-color: unset;
+    font-size: 26px;
+    color: var(--green-color);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.profile-con .serviceAuth{
+    padding-top: 216px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 73px;
+}
+.profile-con .serviceAuth .to-go{
+    position: relative;
+    width: 69%;
+}
+.profile-con img{
+    z-index: +4;
+}
+.profile-con .image{
+    position: relative;
+    z-index: +4;
+}
+.profile-con .serviceAuth .to-go{
+}
+
+.profile-con .updateanddelete{
+    position: absolute;
+    bottom: 5px;
+    background-color: #92cdc800;
+    width: 100%;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    left: 0;
+    border-radius: 0 0 20px 20px;
+    transition: 0.5s;
+    z-index: +7;
+}
+.profile-con .updateanddelete .update{
+    background-color: var(--green-color);
+    border: var(--green-color);
+    padding: 10px;
+    margin: 0 10px;
+    border-radius: 5px;
+    color: var(--gray-color);
+}
+.profile-con .updateanddelete .delete{
+    background-color: red;
+    border: var(--green-color);
+    padding: 10px;
+    margin: 0 10px;
+    border-radius: 5px;
+    color: var(--gray-color);
+}
+.profile-con .serviceAuth .down{
+    position: absolute;
+    bottom: -55px;
+    background-color: var(--gray-color);
+    font-size: 20px;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    left: 0;
+    padding: 0;
+    border-radius: 50%;
+    padding-top: 100px;
+    z-index: 0;
+}
+.profile-con .serviceAuth .title{
+    color: var(--red-color);
+}
+.profile-con .serviceAuth .price{
+    color: var(--green-color);
+}
+
+.apdate{
+    position: fixed;
+    z-index: +10;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1a1919ad;
+}
+.apdate > button{
+    position: fixed;
+    right: 0px;
+    top: 0px;
+    background-color: unset;
+    color: white;
+    font-weight: bold;
+    font-size: 34px;
+}
+.apdate .form-update{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+.apdate input{
+    font-size: 18px;
+    padding: 9px 5px;
+    border: none;
+    border-radius: 5px;
+    border-bottom: 2px solid var(--red-color);
+    width: 300px;
+}
+.apdate select{
+    font-size: 18px;
+    padding: 9px 5px;
+    border: none;
+    border-radius: 5px;
+    border-bottom: 2px solid var(--red-color);
+    width: 310px;
+}
+.apdate .button{
+    color: white;
+    background-color: var(--green-color);
+    border-radius: 5px;
+    padding: 11px;
+    width: 146px;
+    font-size: 20px;
+}
+.saved{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0;
+    gap: 20px;
+}
+.saved .icon{
+    color: var(--green-color);
+    font-size: 24px;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-top: 2px solid var(--red-color);
+}
+.saves{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    gap: 15px;
+    padding: 10px;
+}
+.saved a{
+    border-radius: 5px;
+    text-decoration: none;
+    color: var(--yello-color);
+    text-align: center;
+    box-shadow: 0 2px 10px rgb(45 40 42 / 34%);
+}
+.auth-dark a{
+    box-shadow: 0 1px 16px rgb(255 255 255 / 34%);
+}
+.saved img{
+    width: 300px;
+    height: 300px;
+    object-fit: contain;
+}
+
+.saved .text{
+    text-align: end;
+    padding: 0 10px
+}
+.saved .text p:first-child{}
+.saved .text p:last-child{
+    color: var(--blue-color);
+}
+
+.profile-con .update-location{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 84vh;
+    background-color: var(--gray-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    gap: 20px;
+    padding-top: 200px;
+    z-index: +7;
+}
+.profile-con .address{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 2px 10px rgb(45 40 42 / 34%);
+    padding: 10px 20px;
+    border-radius: 4px;
+    width: 182px;
+    background-color: var(--blue-color);
+    color: var(--white-color);
+}
+.profile-con .update-location .back{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: var(--blue-color);
+    font-size: 20px;
+    padding: 10px 28px;
+}
+.profile-con .add-location{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: #373232ab;
+    padding: 20px;
+    margin-top: -50px;
+}
+.profile-con .add-location input{
+    border: none;
+    border-radius: 6px;
+    padding: 9px 10px;
+    font-size: 18px;
+}
+.profile-con .add-location iframe{}
+.profile-con .loaction{
+    display: flex;
+    align-items: center;
+}
+.profile-con .name p{
+    margin: 0;
+    font-size: 10px;
+    text-align: center;
+}
+.profile-con .update-location button{}
+@media (max-width: 800px) {
+    .profile-con .img{
+        height: 300px;
+    }
+    .profile-con .serviceAuth{
+        padding-top: 243px;
+    }
+    .profile-con .saves{
+        justify-content: center;
+      }
+}

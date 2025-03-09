@@ -1,0 +1,385 @@
+/*/////////////////service///////////////////////////*/
+.service-drk{
+    display: flex;
+    flex-direction: column;
+    padding: 3px;
+    align-items: center;
+    background-color: var(--background-dark);
+    color: var(--color-dark-mode);
+    height: 83vh;
+}
+.service{
+    display: flex;
+    flex-direction: column;
+    padding: 3px;
+    align-items: center;
+    background-color: var(--gray-color);
+    height: 83vh;
+}
+.service-con img{
+    width: 80%;
+    height: 326px;
+    object-fit: contain;
+    border-radius: 16px;
+}
+.service-con .row{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+}
+.service-con .more{
+    padding: 0 5px;
+}
+.service-con .more h1{
+    margin: 0;
+    color: var(--green-color);
+}
+.service-con .more p{
+    margin: 3px 7px;
+    font-size: 17px;
+    color: var(--red-color);
+}
+.service-con .rigth{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+}
+.add-to-cart{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+.add-to-cart .range{
+    display: flex;
+    flex-direction: column;
+    padding: 0 10px;
+    align-items: center;
+}
+.add-to-cart .range button{
+    background-color: unset;
+    color: green;
+    font-size: 35px;
+    font-weight: 100;
+}
+.add-to-cart .range button:last-child{
+    color: red;
+}
+.service-con .service-btn{
+    background-color: var(--green-color);
+    border: none;
+    padding: 6px;
+    border-radius: 6px;
+    color: var(--white-color);
+    font-size: 17px;
+}
+.service-con .name{
+    text-decoration: none;
+    color: var(--red-color);
+    font-size: 20px;
+}
+@media (max-width: 800px) {
+.service-con .service-btn{
+    padding: 8px 5px;
+    width: 122px;
+}
+.service-con .rigth{
+    align-items: self-end;
+}
+.service-con .row{
+    width: 100%;
+}
+
+}
+@media (max-width: 500px) {
+    .service-con img {
+        width: 100%;
+        object-fit: contain;
+        border-radius: 16px;
+        margin: 0px 0 30px 0;
+    }
+}
+/*//////////////////////////////////////////////
+////////////////Auth//////////////////////////*/
+
+.auth .error{}
+.auth-dark{
+    background-color: var(--background-dark);
+    color: var(--color-dark-mode);
+    padding-bottom: 60px;
+}
+.auth .profile{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    background-color: var(--gray-color);
+    padding: 6px 0 20px 0px;
+    height: 300px;
+    box-shadow: 0 2px 10px rgb(45 40 42 / 34%);
+}
+.auth-dark .profile{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    background-color: #b7c3cf;
+    padding: 6px 0 20px 0px;
+    height: 300px;
+    box-shadow: 0 2px 10px rgb(45 40 42 / 34%);
+    
+}
+.auth-con .img{
+    width: 64%;
+    height: 400px;
+    position: absolute;
+    top: 86px;
+    border-radius: 20px;
+}
+.auth-con img{
+    width: 100%;
+    object-fit: contain;
+    border-radius: 20px;
+    height: 100%;
+}
+.auth-con .information{
+    position: absolute;
+    top: 196px;
+    display: flex;
+    width: 98%;
+    justify-content: space-between;
+}
+.auth-con .left{
+    background-image: var(--gray-color);
+    flex-direction: column;
+}
+.auth-con .left button{
+    background-color: red;
+    color: white;
+    font-size: 16px;
+    border: red;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.auth-con .save button{
+    background-color: unset;
+    border: none;
+    font-size: 25px;
+    color: var(--green-color);
+}
+.auth-con .save .icon{
+    color: var(--green-color);
+}
+.auth-con .img button{
+    border: none;
+    background-color: unset;
+    font-size: 26px;
+    color: var(--green-color);
+    position: absolute;
+    top: 364px;
+    left: -6px;
+}
+.auth-con .serviceAuth{
+    padding-top: 216px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+.auth-con .serviceAuth .to-go{
+    position: relative;
+    width: 60%;
+}
+.auth-con .image{
+    z-index: +4;
+    position: relative;
+    height: 264px;
+}
+.auth-con .image button{
+    position: absolute;
+    bottom: 9px;
+    left: 0;
+    background-color: var(--green-color);
+}
+.auth-con .image button:active{
+    animation: pulse 0.3s ease-out ;
+}
+.auth-con .serviceAuth .to-go:hover > .updateanddelete{
+    clip-path: polygon(0 100%, 100% 100%, 100% 0, 0 0);
+}
+
+.auth-con .updateanddelete{
+    clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0% 100%);
+    position: absolute;
+    bottom: 5px;
+    background-color: var(--blue-color);
+    width: 100%;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    left: 0;
+    border-radius: 0 0 20px 20px;
+    transition: 0.5s;
+}
+.auth-con .updateanddelete .update{
+    background-color: var(--green-color);
+    border: var(--green-color);
+    padding: 10px;
+    margin: 0 10px;
+    border-radius: 5px;
+    color: var(--gray-color);
+}
+.auth-con .updateanddelete .delete{
+    background-color: red;
+    border: var(--green-color);
+    padding: 10px;
+    margin: 0 10px;
+    border-radius: 5px;
+    color: var(--gray-color);
+}
+.auth-con .serviceAuth .down{
+    position: absolute;
+    bottom: -55px;
+    background-color: var(--gray-color);
+    font-size: 20px;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    left: 0;
+    padding: 0;
+    border-radius: 50%;
+    padding-top: 100px;
+    z-index: 0;
+}
+.auth-con .serviceAuth .title{
+    color: var(--red-color);
+}
+.auth-con .serviceAuth .price{
+    color: var(--green-color);
+}
+
+.apdate{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1a1919ad;
+}
+.apdate > button{
+    position: fixed;
+    right: 0px;
+    top: 0px;
+    background-color: unset;
+    color: white;
+    font-weight: bold;
+    font-size: 34px;
+}
+.apdate .form-update{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+.apdate input{
+    font-size: 18px;
+    padding: 9px 5px;
+    border: none;
+    border-radius: 5px;
+    border-bottom: 2px solid var(--red-color);
+    width: 300px;
+}
+.apdate select{
+    font-size: 18px;
+    padding: 9px 5px;
+    border: none;
+    border-radius: 5px;
+    border-bottom: 2px solid var(--red-color);
+    width: 310px;
+}
+.apdate .button{
+    color: white;
+    background-color: var(--green-color);
+    border-radius: 5px;
+    padding: 11px;
+    width: 146px;
+    font-size: 20px;
+}
+.saved{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0;
+    gap: 20px;
+}
+.saved .icon{
+    color: var(--green-color);
+    font-size: 24px;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-top: 2px solid var(--red-color);
+}
+.saves{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    gap: 15px;
+    padding: 10px;
+}
+.saved a{
+    border-radius: 5px;
+    text-decoration: none;
+    color: var(--yello-color);
+    text-align: center;
+    box-shadow: 0 2px 10px rgb(45 40 42 / 34%);
+}
+.auth-dark a{
+    box-shadow: 0 1px 16px rgb(255 255 255 / 34%);
+}
+.saved img{
+    width: 300px;
+    height: 300px;
+    object-fit: contain;
+}
+
+.saved .text{}
+.saved .text p{}
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+  }
+  
+@media (max-width: 800px) {
+    .auth-con .information{
+        top: 431px;
+        justify-content: space-around;
+    }
+    .auth-con .img{
+        width: 75%;
+        height: 300px;
+    }
+    .auth-con .serviceAuth{
+        padding-top: 218px;
+    }
+    .saves{
+        justify-content: center;
+      }
+.auth-con .img button{
+    top: 263px;
+}
+.auth-con .serviceAuth {
+    padding-top: 218px;
+}
+}

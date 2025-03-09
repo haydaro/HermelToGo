@@ -1,0 +1,36 @@
+.dark-mode{
+    background-color: var(--background-dark);
+    color: var(--color-dark-mode);
+}
+.category{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px 0;
+}
+.category .link{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-decoration: none;
+    align-items: center;
+}
+.category img{
+    width: 300px;
+    height: 210px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+.category h1{
+    margin: 0;
+    color: var(--gren-color);
+}
+.category p{
+    margin: 0;
+    color: var(--red-color);
+}
+.category span{
+    margin: 0;
+    color: var(--red-color);
+}

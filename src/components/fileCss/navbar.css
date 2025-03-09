@@ -1,0 +1,145 @@
+/*///////////////////////////////////////////////////
+                        navbar                     */
+.navbar{
+  background-color: var(--red-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 67px;
+  padding: 10px 10px;
+}
+.navbar-drk{
+  background-color: var(--bakground-dark-nav);
+  color: var(--color-dark-mode);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 67px;
+  padding: 10px 10px;
+}
+.logo{
+  width: 111px;
+}
+.left{
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.link{
+  text-decoration: none;
+  font-size: 20px;
+  color: var(--gray-color);
+  padding: 5px 7px;
+  border-radius: 5px;
+}
+.link img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+.home{
+  font-size: 25px;
+}
+.right{
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+.right .requiset a{
+  color: var(--white-color);
+}
+.nav-btn{
+  background-color: inherit;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.link:hover{
+  color: var(--red-color);
+  background-color: var(--gray-color);
+}
+.nv-inp{
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.2);
+  border: navajowhite;
+  border-radius: 6px;
+  padding: 8px 8px;
+}
+ .absoluteEn{
+  position: absolute;
+    right: 0;
+    background-color: var(--yello-color);
+    display: flex;
+    flex-direction: column;
+    top: 70px;
+    padding: 10px;
+    align-items: center;
+    gap: 10px;
+    border-radius: 6px;
+    z-index: +13;
+}
+.absoluteAr{
+  position: absolute;
+    left: 0;
+    background-color: var(--yello-color);
+    display: flex;
+    flex-direction: column;
+    top: 70px;
+    padding: 10px;
+    align-items: center;
+    gap: 10px;
+    border-radius: 6px;
+    z-index: +13;
+}
+.absoluteAr img{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+a{
+  color: black;
+  font-size: 20px;
+  text-decoration: none;
+}
+button{
+  border: navajowhite;
+    background-color: var(--red-color);
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: var(--white-color);
+    font-weight: bold;
+    cursor: pointer;
+}
+@media (max-width: 774px) {
+  .navbar{
+    flex-direction: column;
+  }
+  .navbar-drk{
+    flex-direction: column;
+  }
+  .left {
+    width: 100%;
+    justify-content: space-evenly;
+  }
+  .absoluteAr{
+    top: 108px;
+    left: 6px;
+    width: 18%;
+  }
+  .absoluteEn{
+    top: 108px;
+    right: 6px;
+    width: 18%;
+  }
+}
+@media (max-width: 500px) {
+  .absoluteAr{
+    top: 111px;
+  }
+  .absoluteEn{
+    top: 111px;
+  }
+}
+/*////////////////////////////////////////////////////*/

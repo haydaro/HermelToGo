@@ -1,0 +1,50 @@
+.admin{
+    display: flex;
+}
+.admin .left{
+    flex: 2 1;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border-right: solid 2px black;
+    height: 84vh;
+}
+.admin .left .auths{
+    padding: 15px;
+    color: var(--red-color);
+    font-size: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    background-color: unset;
+    border: none;
+}
+.admin .left .services{
+    padding: 15px;
+    color: var(--red-color);
+    font-size: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    background-color: unset;
+    border: none;
+}
+.admin .informtion{
+    flex: 6;
+}
+.admin .informtion .link{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    text-decoration: none;
+    color: var(--blue-color);
+    padding: 10px 0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+.admin .informtion img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.admin .informtion span{
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}

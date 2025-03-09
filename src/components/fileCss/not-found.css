@@ -1,0 +1,64 @@
+.dark-moud{
+    background-color: var(--background-dark);
+    color: #f7fafc; /* لون النص في الوضع الداكن */
+}
+.no-dark-moud{
+    background-color: #f7fafc; /* لون خلفية عادي */
+    color: #2d3748; 
+}
+  /* تنسيق الصفحة */
+  .no-found-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 141px);
+    text-align: center;
+    padding: 20px;
+  }
+  
+  /* تنسيق النص */
+  .status {
+    font-size: 5rem;
+    font-weight: bold;
+    color: #e53e3e; /* اللون الأحمر لرقم 404 */
+    margin: 0;
+  }
+  
+  .text-not-found {
+    font-size: 1.25rem;
+    margin-top: 10px;
+    color: #4a5568; /* لون النص العادي */
+  }
+  
+  /* تنسيق الصورة */
+  .img-not-found {
+    width: 250px;
+    height: 250px;
+    margin-top: 20px;
+    object-fit: cover;
+  }
+  
+  /* زر العودة إلى الصفحة الرئيسية */
+  .go-to-home {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 10px 20px;
+    background-color: #3182ce; /* اللون الأزرق */
+    color: white;
+    font-size: 1.125rem;
+    font-weight: bold;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .go-to-home:hover {
+    background-color: #2b6cb0; /* اللون الأزرق عند التمرير */
+  }
+  
+@media (max-width: 774px) {
+    .no-found-page{
+    height: calc(100vh - 159px);
+    }
+}

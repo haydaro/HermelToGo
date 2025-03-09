@@ -1,0 +1,134 @@
+.search{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: start;
+    background-color: var(--gray-color);
+}
+.search-dark{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: start;
+    background-color: var(--background-dark);
+}
+.search-container img{
+    width: 300px;
+    height: 210px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+.search-container .link{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-decoration: none;
+    align-items: center;
+}
+.search-container h1{
+    margin: 0;
+    color: var(--red-color);
+}
+.search-container p{
+    margin: 0;
+    color: var(--gren-color);
+}
+.home-page{
+    overflow: hidden;
+}
+.home-page-dark{
+    overflow: hidden;
+    background-color: var(--background-dark);
+    color: var(--color-dark-mode);
+}
+.home-page .error{}
+.containeri{
+    overflow-y: hidden;
+}
+.containeri .one {
+    width: 100%;
+    padding: 13px 0;
+    border-bottom: 1px solid;
+}
+.containeri .more{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px
+}
+.containeri .more p{
+    padding: 5px;
+    border: 1px solid;
+    margin: 10px 0;
+    border-radius: 15px;
+}
+.containeri .more a{
+    padding: 5px;
+    border: 1px solid;
+    margin: 10px 0;
+    border-radius: 15px;
+    text-decoration: none;
+    color: var(--red-color);
+}
+.containeri .content{
+    display: flex;
+    gap: 7px;
+    width: 100%;
+    padding: 0 10px;
+    overflow-x: row;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
+.containeri .content::-webkit-scrollbar {
+    display: none;
+  }
+.containeri .link{
+    flex-shrink: 0;
+    text-decoration: none;
+}
+.containeri .content img{
+    width: 230px;
+    height: 170px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+.containeri h1{
+    margin: 0 15px;
+    color: var(--red-color);
+}
+.containeri p{
+    margin: 0 15px;
+    color: var(--blue-color);
+}
+.containeri span{
+    margin: 0 15px;
+    color: var(--blue-color);
+}
+/*///////////////////////////////////////////////////*/
+/* /////////////////slider///////////////////////////*/
+
+.container {
+    width: 100%;
+    background-color: var(--white-color);
+    height: 400px;
+    display: flex;
+    justify-content: center;
+  }
+  .container-drk{
+    width: 100%;
+    background-color: var(--background-dark);
+    color: var(--color-dark-mode);
+    height: 400px;
+    display: flex;
+    justify-content: center;
+  }
+  .slider{
+    width: 100%;
+  }
+  
+  .slick-slide img {
+    width: 100%;
+    height: 359px;
+    object-fit: cover;
+  }
+  
+  /*////////////////////////////////////////////////*/

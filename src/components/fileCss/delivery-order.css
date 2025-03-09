@@ -1,0 +1,70 @@
+.orders{
+    width: 100%;
+    height: calc(100vh - 121px);
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px 0;
+    background-color: var(--gray-color);
+}
+.orders-dark{
+    width: 100%;
+    height: calc(100vh - 121px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px 0;
+    background-color: var(--background-dark);
+}
+.item-orders{
+    width: 350px;
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.2);
+    border-radius: 30px;
+    align-items: center;
+    padding: 10px;
+}
+.item-orders .left{
+    color: var(--red-color);
+}
+.botton-delivery{
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 20px;
+}
+.botton-delivery .monePush{
+    background-color: var(--red-color);
+    padding: 6px 20px;
+    border-radius: 5px;
+    color: var(--white-color);
+}
+.botton-delivery .moneMy{
+    background-color: var(--green-color);
+    padding: 6px 20px;
+    border-radius: 5px;
+    color: var(--white-color);
+}
+.botton-delivery .lengthOrder{
+    background-color: var(--yello-color);
+    padding: 6px 20px;
+    border-radius: 5px;
+    color: var(--white-color);
+}
+@media (max-width: 700px) {
+    .orders{
+    height: calc(100vh - 159px);
+    }
+    .orders-dark{
+        height: calc(100vh - 159px);
+        }
+}

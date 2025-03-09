@@ -1,0 +1,51 @@
+.not-verification-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 92px);
+    background: linear-gradient(135deg, #667eea, #764ba2);
+  }
+  
+  .not-verification-card {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 90%;
+  }
+  
+  .not-verification-container .icon {
+    font-size: 50px;
+    color: #764ba2;
+    margin-bottom: 15px;
+  }
+  
+  .not-verification-container h2 {
+    margin: 10px 0;
+    color: #333;
+  }
+  
+  .not-verification-container p {
+    color: #555;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  .not-verification-container button {
+    background: #764ba2;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 20px;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .not-verification-container :hover {
+    background: #5b3a8a;
+  }
+  

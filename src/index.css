@@ -1,0 +1,16 @@
+body {
+  font-family: "DM Serif Text", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+:root {
+  --green-color: #28a745;
+  --bakground-dark-nav: #121212;
+  --background-dark:#373232;
+  --color-dark-mode: #ffffff;
+  --red-color: #ff6f00;
+  --yello-color: #ffc107;
+  --white-color: #ffffff;
+  --gray-color: #f8f9fa;
+  --blue-color: #92CDC8;
+}
